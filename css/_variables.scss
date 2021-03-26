@@ -1,1 +1,12 @@
 // 変数を記述
+
+// フォントサイズ
+$text-base: 1920;
+$text-xxlarge: 70 * 100vw / #{$text-base};
+$text-xlarge: 50 * 100vw / #{$text-base};
+$text-large: 44 * 100vw / #{$text-base};
+$text-xxxmedium: 30 * 100vw / #{$text-base};
+$text-xxmedium: 28 * 100vw / #{$text-base};
+$text-xmedium: 24 * 100vw / #{$text-base};
+$text-medium: 22 * 100vw / #{$text-base};
+$text-small: 16 * 100vw / #{$text-base};

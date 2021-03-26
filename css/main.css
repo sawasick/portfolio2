@@ -34,6 +34,34 @@ body {
 }
 
 .text-xxlarge {
-  font-size: 3.65vw !important;
+  font-size: 3.64583vw !important;
+}
+
+.text-xlarge {
+  font-size: 2.60417vw !important;
+}
+
+.text-large {
+  font-size: 2.29167vw !important;
+}
+
+.text-xxxmedium {
+  font-size: 1.5625vw !important;
+}
+
+.text-xxmedium {
+  font-size: 1.45833vw !important;
+}
+
+.text-xmedium {
+  font-size: 1.25vw !important;
+}
+
+.text-medium {
+  font-size: 1.14583vw !important;
+}
+
+.text-small {
+  font-size: 0.83333vw !important;
 }
 /*# sourceMappingURL=main.css.map */

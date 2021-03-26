@@ -1,3 +1,5 @@
+@import 'variables';
+
 .img-full {
 	width: 100%;
 }
@@ -7,6 +9,28 @@
 }
 
 // テキストサイズ
+//styleGuide.md参照
 .text-xxlarge {
-	font-size: 3.65vw !important;
+	font-size: $text-xxlarge !important;
+}
+.text-xlarge {
+	font-size: $text-xlarge !important;
+}
+.text-large {
+	font-size: $text-large !important;
+}
+.text-xxxmedium {
+	font-size: $text-xxxmedium !important;
+}
+.text-xxmedium {
+	font-size: $text-xxmedium !important;
+}
+.text-xmedium {
+	font-size: $text-xmedium !important;
+}
+.text-medium {
+	font-size: $text-medium !important;
+}
+.text-small {
+	font-size: $text-small !important;
 }
