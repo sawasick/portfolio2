@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
+  margin: 0 auto;
+  width: 100vw;
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.linkHover:hover {
+  opacity: 0.4;
+}
+
+.is-hide {
+  display: none;
+}
+
+.img-full {
+  width: 100%;
+}
+
+.font-extra {
+  font-family: 'Hiragino Kaku Gothic Std W8';
+}
+
+.text-xxlarge {
+  font-size: 3.65vw !important;
+}
+/*# sourceMappingURL=main.css.map */
