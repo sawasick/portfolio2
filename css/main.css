@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -11,6 +12,8 @@ body {
   width: 100vw;
   font-size: 22px;
   line-height: 1.7;
+  color: #13131f;
+  background-color: #f6f6f6;
 }
 
 .link {
@@ -25,19 +28,11 @@ body {
   display: none;
 }
 
-.img-full {
-  width: 100%;
-}
-
-.font-extra {
-  font-family: 'Hiragino Kaku Gothic Std W8';
-}
-
 .text-xxlarge {
   font-size: 3.64583vw !important;
 }
 
-.text-xlarge {
+.text-xlarge, .section-title {
   font-size: 2.60417vw !important;
 }
 
@@ -45,7 +40,7 @@ body {
   font-size: 2.29167vw !important;
 }
 
-.text-xxxmedium {
+.text-xxxmedium, .section-subtitle {
   font-size: 1.5625vw !important;
 }
 
@@ -63,5 +58,141 @@ body {
 
 .text-small {
   font-size: 0.83333vw !important;
+}
+
+.font-extra, .section-title {
+  font-family: 'Hiragino Kaku Gothic Std W8';
+}
+
+.font-emphasis {
+  font-weight: bold;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
+  margin: 0 auto;
+  width: 100vw;
+  font-size: 22px;
+  line-height: 1.7;
+  color: #13131f;
+  background-color: #f6f6f6;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.linkHover:hover {
+  opacity: 0.4;
+}
+
+.is-hide {
+  display: none;
+}
+
+.text-xxlarge {
+  font-size: 3.64583vw !important;
+}
+
+.text-xlarge, .section-title {
+  font-size: 2.60417vw !important;
+}
+
+.text-large {
+  font-size: 2.29167vw !important;
+}
+
+.text-xxxmedium, .section-subtitle {
+  font-size: 1.5625vw !important;
+}
+
+.text-xxmedium {
+  font-size: 1.45833vw !important;
+}
+
+.text-xmedium {
+  font-size: 1.25vw !important;
+}
+
+.text-medium {
+  font-size: 1.14583vw !important;
+}
+
+.text-small {
+  font-size: 0.83333vw !important;
+}
+
+.font-extra, .section-title {
+  font-family: 'Hiragino Kaku Gothic Std W8';
+}
+
+.font-emphasis {
+  font-weight: bold;
+}
+
+#main-wrapper {
+  width: 100%;
+  min-width: 1000px;
+}
+
+#content-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+}
+
+.text-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.section-title {
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-bottom: 4px solid #ffcc33;
+}
+
+.section-subtitle {
+  text-align: center;
+}
+
+.img-full {
+  width: 100%;
+}
+
+.img-fv {
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+}
+
+.top-wrapper {
+  position: relative;
+}
+
+.top-wrapper p {
+  position: absolute;
+}
+
+.top-wrapper__title {
+  top: 12vw;
+  left: 3vw;
+}
+
+.top-wrapper__subtitle {
+  top: 34vw;
+  right: 3vw;
 }
 /*# sourceMappingURL=main.css.map */

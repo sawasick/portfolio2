@@ -1,0 +1,37 @@
+// Layout
+
+@import 'variables';
+@import 'base';
+
+#main-wrapper {
+	width: 100%;
+	min-width: 1000px;
+}
+#content-wrapper {
+	width: 1080px;
+	margin: 0 auto;
+}
+
+.text-wrapper {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.section-title {
+	@extend .text-xlarge, .font-extra;
+	position: relative;
+	display: inline-block;
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-bottom: 4px solid $accentColor;
+	}
+}
+
+.section-subtitle {
+	@extend .text-xxxmedium;
+	text-align: center;
+}
