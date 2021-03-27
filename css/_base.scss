@@ -63,6 +63,17 @@ body {
 	font-size: $text-small !important;
 }
 
+// テキスト配置
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
 // フォント
 .font-extra {
 	font-family: 'Hiragino Kaku Gothic Std W8';

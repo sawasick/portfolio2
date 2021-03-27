@@ -83,3 +83,19 @@
 		}
 	}
 }
+
+// inspire
+.inspire-img-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	img {
+		&:first-child {
+			padding-bottom: 10%;
+		}
+		&:last-child {
+			padding-top: 10%;
+		}
+	}
+}
