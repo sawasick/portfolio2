@@ -70,3 +70,12 @@ body {
 .font-emphasis {
 	font-weight: bold;
 }
+
+// 画像サイズ
+.img-full {
+	width: 100%;
+}
+.img-fv {
+	width: 100vw;
+	margin: 0 calc(50% - 50vw);
+}

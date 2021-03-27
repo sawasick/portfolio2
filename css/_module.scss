@@ -2,27 +2,40 @@
 
 @import 'variables';
 
-// 画像サイズ
-.img-full {
-	width: 100%;
-}
-.img-fv {
-	width: 100vw;
-	margin: 0 calc(50% - 50vw);
-}
-
-// TOP
+/* Top */
 .top-wrapper {
 	position: relative;
 	p {
 		position: absolute;
 	}
 }
-.top-wrapper__title {
+.top__title {
 	top: 12vw;
 	left: 3vw;
 }
-.top-wrapper__subtitle {
+.top__subtitle {
 	top: 34vw;
 	right: 3vw;
+}
+
+/* About */
+// profile
+.profile-wrapper {
+	display: flex;
+	justify-content: space-between;
+	img {
+		width: 480px;
+	}
+}
+.profile-text-wrapper {
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	a {
+		width: 100%;
+		img {
+			width: 30%;
+		}
+	}
 }
