@@ -28,47 +28,47 @@ body {
   display: none;
 }
 
-.text-xxlarge {
+.txt-xxlarge {
   font-size: 3.64583vw !important;
 }
 
-.text-xlarge, .section-title {
+.txt-xlarge, .section-title {
   font-size: 2.60417vw !important;
 }
 
-.text-large {
+.txt-large {
   font-size: 2.29167vw !important;
 }
 
-.text-xxxmedium, .section-subtitle {
+.txt-xxxmedium, .section-subtitle {
   font-size: 1.5625vw !important;
 }
 
-.text-xxmedium {
+.txt-xxmedium {
   font-size: 1.45833vw !important;
 }
 
-.text-xmedium {
+.txt-xmedium {
   font-size: 1.25vw !important;
 }
 
-.text-medium {
+.txt-medium {
   font-size: 1.14583vw !important;
 }
 
-.text-small {
+.txt-small {
   font-size: 16px !important;
 }
 
-.text-left {
+.txt-left {
   text-align: left;
 }
 
-.text-center {
+.txt-center {
   text-align: center;
 }
 
-.text-right {
+.txt-right {
   text-align: right;
 }
 
@@ -117,47 +117,47 @@ body {
   display: none;
 }
 
-.text-xxlarge {
+.txt-xxlarge {
   font-size: 3.64583vw !important;
 }
 
-.text-xlarge, .section-title {
+.txt-xlarge, .section-title {
   font-size: 2.60417vw !important;
 }
 
-.text-large {
+.txt-large {
   font-size: 2.29167vw !important;
 }
 
-.text-xxxmedium, .section-subtitle {
+.txt-xxxmedium, .section-subtitle {
   font-size: 1.5625vw !important;
 }
 
-.text-xxmedium {
+.txt-xxmedium {
   font-size: 1.45833vw !important;
 }
 
-.text-xmedium {
+.txt-xmedium {
   font-size: 1.25vw !important;
 }
 
-.text-medium {
+.txt-medium {
   font-size: 1.14583vw !important;
 }
 
-.text-small {
+.txt-small {
   font-size: 16px !important;
 }
 
-.text-left {
+.txt-left {
   text-align: left;
 }
 
-.text-center {
+.txt-center {
   text-align: center;
 }
 
-.text-right {
+.txt-right {
   text-align: right;
 }
 

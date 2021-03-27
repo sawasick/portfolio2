@@ -22,7 +22,7 @@
 }
 
 .section-title {
-	@extend .text-xlarge, .font-extra;
+	@extend .txt-xlarge, .font-extra;
 	position: relative;
 	display: inline-block;
 	&::after {
@@ -36,6 +36,6 @@
 }
 
 .section-subtitle {
-	@extend .text-xxxmedium;
+	@extend .txt-xxxmedium;
 	text-align: center;
 }
