@@ -35,6 +35,10 @@
   padding: 0;
 }
 
+* p {
+  margin: 4% 0 0 0;
+}
+
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
@@ -63,7 +67,7 @@ body {
 }
 
 .txt-large {
-  font-size: 2.29167vw !important;
+  font-size: 2.1875vw !important;
 }
 
 .txt-xxxmedium, .section-subtitle {
@@ -149,6 +153,10 @@ body {
   padding: 0;
 }
 
+* p {
+  margin: 4% 0 0 0;
+}
+
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
@@ -177,7 +185,7 @@ body {
 }
 
 .txt-large {
-  font-size: 2.29167vw !important;
+  font-size: 2.1875vw !important;
 }
 
 .txt-xxxmedium, .section-subtitle {
@@ -239,6 +247,10 @@ body {
   margin: 0 auto;
 }
 
+.section-wrapper {
+  margin-bottom: 12%;
+}
+
 .subsection-wrapper {
   margin: 7% 0;
 }
@@ -251,6 +263,7 @@ body {
 .section-title {
   position: relative;
   display: inline-block;
+  margin: 0;
 }
 
 .section-title::after {
@@ -264,6 +277,7 @@ body {
 
 .section-subtitle {
   text-align: center;
+  margin: 8% 0 3% 0;
 }
 
 #footer {
@@ -389,6 +403,15 @@ body {
   background-color: #f6f6f6;
 }
 
+.vision-wrapper p:first-child {
+  position: relative;
+}
+
+.vision-wrapper p:first-child span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
+  background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
+}
+
 .inspire-img-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -397,6 +420,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 4%;
 }
 
 .inspire-img-wrapper img:first-child {
@@ -431,6 +455,7 @@ body {
 
 .works-wrapper li {
   width: 330px;
+  margin-bottom: 2%;
 }
 
 .is-hide {

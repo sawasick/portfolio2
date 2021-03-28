@@ -82,11 +82,23 @@
 	}
 }
 
+// vision-wrapper
+.vision-wrapper {
+	p:first-child {
+		position: relative;
+
+		span {
+			background: linear-gradient($baseColor 70%, $accentColor 0);
+		}
+	}
+}
+
 // inspire
 .inspire-img-wrapper {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	margin-top: 4%;
 
 	img {
 		&:first-child {
@@ -111,5 +123,6 @@
 
 	li {
 		width: 330px;
+		margin-bottom: 2%;
 	}
 }

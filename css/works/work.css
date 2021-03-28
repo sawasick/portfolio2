@@ -35,6 +35,10 @@
   padding: 0;
 }
 
+* p {
+  margin: 4% 0 0 0;
+}
+
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
@@ -63,7 +67,7 @@ body {
 }
 
 .txt-large {
-  font-size: 2.29167vw !important;
+  font-size: 2.1875vw !important;
 }
 
 .txt-xxxmedium, .section-subtitle, .section-title {
@@ -149,6 +153,10 @@ body {
   padding: 0;
 }
 
+* p {
+  margin: 4% 0 0 0;
+}
+
 html,
 body {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Std W8', 'Noto Sans JP', 'Hiragino Sans', Meiryo, sans-serif;
@@ -177,7 +185,7 @@ body {
 }
 
 .txt-large {
-  font-size: 2.29167vw !important;
+  font-size: 2.1875vw !important;
 }
 
 .txt-xxxmedium, .section-subtitle, .section-title {
@@ -239,6 +247,10 @@ body {
   margin: 0 auto;
 }
 
+.section-wrapper {
+  margin-bottom: 12%;
+}
+
 .subsection-wrapper {
   margin: 7% 0;
 }
@@ -251,6 +263,7 @@ body {
 .section-title {
   position: relative;
   display: inline-block;
+  margin: 0;
 }
 
 .section-title::after {
@@ -264,6 +277,7 @@ body {
 
 .section-subtitle {
   text-align: center;
+  margin: 8% 0 3% 0;
 }
 
 #footer {
