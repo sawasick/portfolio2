@@ -6,6 +6,18 @@ $mainColor: #13131f;
 $accentColor: #ffcc33;
 
 // フォントサイズ
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
 $txt-base: 1920;
 $txt-xxlarge: 70 * 100vw / #{$txt-base};
 $txt-xlarge: 50 * 100vw / #{$txt-base};

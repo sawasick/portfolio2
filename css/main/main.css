@@ -1,3 +1,28 @@
+@charset "UTF-8";
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 * {
@@ -94,6 +119,30 @@ body {
   margin: 0 calc(50% - 50vw);
 }
 
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -225,6 +274,18 @@ body {
   text-align: center;
 }
 
+/* styleGuide
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-small : 16px
+*/
 /* Top */
 .top-wrapper {
   position: relative;
