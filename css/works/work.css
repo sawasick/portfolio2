@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* styleGuide
+PC
 100vw = 1920px を基にサイズを決定
 
 .txt-xxlarge : 70px
@@ -10,8 +11,21 @@
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
 .txt-small : 16px
+
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-small : 11px
 */
+/* メディアクエリ  */
 /* styleGuide
+PC
 100vw = 1920px を基にサイズを決定
 
 .txt-xxlarge : 70px
@@ -22,7 +36,19 @@
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
 .txt-small : 16px
+
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-small : 11px
 */
+/* メディアクエリ  */
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap");
 * {
@@ -62,32 +88,86 @@ body {
   font-size: 3.64583vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-xxlarge {
+    font-size: 5.86667vw !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .txt-xxlarge {
+    font-size: 50px !important;
+  }
+}
+
 .txt-xlarge, .section-title {
   font-size: 2.60417vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xlarge, .section-title {
+    font-size: 5.33333vw !important;
+  }
 }
 
 .txt-large {
   font-size: 2.1875vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-large {
+    font-size: 5.06667vw !important;
+  }
+}
+
 .txt-xxxmedium, .section-subtitle, .section-title {
   font-size: 1.5625vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xxxmedium, .section-subtitle, .section-title {
+    font-size: 4.8vw !important;
+  }
 }
 
 .txt-xxmedium {
   font-size: 1.45833vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-xxmedium {
+    font-size: 4.26667vw !important;
+  }
+}
+
 .txt-xmedium {
   font-size: 1.25vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xmedium {
+    font-size: 3.73333vw !important;
+  }
 }
 
 .txt-medium, .text-wrapper p {
   font-size: 1.14583vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-medium, .text-wrapper p {
+    font-size: 3.2vw !important;
+  }
+}
+
 .txt-small {
   font-size: 16px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-small {
+    font-size: 11px !important;
+  }
 }
 
 .txt-left {
@@ -120,6 +200,7 @@ body {
 }
 
 /* styleGuide
+PC
 100vw = 1920px を基にサイズを決定
 
 .txt-xxlarge : 70px
@@ -130,8 +211,21 @@ body {
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
 .txt-small : 16px
+
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-small : 11px
 */
+/* メディアクエリ  */
 /* styleGuide
+PC
 100vw = 1920px を基にサイズを決定
 
 .txt-xxlarge : 70px
@@ -142,7 +236,19 @@ body {
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
 .txt-small : 16px
+
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-small : 11px
 */
+/* メディアクエリ  */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -180,32 +286,86 @@ body {
   font-size: 3.64583vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-xxlarge {
+    font-size: 5.86667vw !important;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .txt-xxlarge {
+    font-size: 50px !important;
+  }
+}
+
 .txt-xlarge, .section-title {
   font-size: 2.60417vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xlarge, .section-title {
+    font-size: 5.33333vw !important;
+  }
 }
 
 .txt-large {
   font-size: 2.1875vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-large {
+    font-size: 5.06667vw !important;
+  }
+}
+
 .txt-xxxmedium, .section-subtitle, .section-title {
   font-size: 1.5625vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xxxmedium, .section-subtitle, .section-title {
+    font-size: 4.8vw !important;
+  }
 }
 
 .txt-xxmedium {
   font-size: 1.45833vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-xxmedium {
+    font-size: 4.26667vw !important;
+  }
+}
+
 .txt-xmedium {
   font-size: 1.25vw !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xmedium {
+    font-size: 3.73333vw !important;
+  }
 }
 
 .txt-medium, .text-wrapper p {
   font-size: 1.14583vw !important;
 }
 
+@media screen and (max-width: 480px) {
+  .txt-medium, .text-wrapper p {
+    font-size: 3.2vw !important;
+  }
+}
+
 .txt-small {
   font-size: 16px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-small {
+    font-size: 11px !important;
+  }
 }
 
 .txt-left {
@@ -239,12 +399,23 @@ body {
 
 #main-wrapper {
   width: 100%;
-  min-width: 1000px;
 }
 
 #content-wrapper {
   width: 1080px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 480px) {
+  #content-wrapper {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  #content-wrapper {
+    width: 80vw;
+  }
 }
 
 .section-wrapper {
@@ -285,6 +456,30 @@ body {
   color: #f6f6f6;
 }
 
+.is-hide {
+  display: none;
+}
+
+.is-hide--pc {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .is-hide--pc {
+    display: block;
+  }
+}
+
+.is-hide--sp {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .is-hide--sp {
+    display: none;
+  }
+}
+
 .fv-wrapper, .work-desc-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -295,15 +490,44 @@ body {
   margin-top: 7vw;
 }
 
+@media screen and (max-width: 480px) {
+  .fv-wrapper, .work-desc-wrapper {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .fv-wrapper img, .work-desc-wrapper img {
   width: 60%;
+  height: 60%;
+}
+
+@media screen and (max-width: 480px) {
+  .fv-wrapper img, .work-desc-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .work-desc-wrapper p {
   width: 45%;
 }
 
+@media screen and (max-width: 480px) {
+  .work-desc-wrapper p {
+    width: 100%;
+  }
+}
+
 .work-desc-wrapper img {
   width: 48%;
+  height: 48%;
+}
+
+@media screen and (max-width: 480px) {
+  .work-desc-wrapper img {
+    width: 100%;
+    height: 100%;
+  }
 }
 /*# sourceMappingURL=work.css.map */

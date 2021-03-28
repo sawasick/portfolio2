@@ -4,3 +4,18 @@
 .is-hide {
 	display: none;
 }
+
+// メディアクエリで表示を切替
+.is-hide--pc {
+	display: none;
+	@include sp {
+		display: block;
+	}
+}
+
+.is-hide--sp {
+	display: block;
+	@include sp {
+		display: none;
+	}
+}

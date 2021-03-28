@@ -44,27 +44,62 @@ body {
 //styleGuide.md参照
 .txt-xxlarge {
 	font-size: $txt-xxlarge !important;
+
+	@include sp {
+		font-size: $txt-xxlarge-sp !important;
+	}
+	@include tab {
+		font-size: 50px !important;
+	}
 }
 .txt-xlarge {
 	font-size: $txt-xlarge !important;
+
+	@include sp {
+		font-size: $txt-xlarge-sp !important;
+	}
 }
 .txt-large {
 	font-size: $txt-large !important;
+
+	@include sp {
+		font-size: $txt-large-sp !important;
+	}
 }
 .txt-xxxmedium {
 	font-size: $txt-xxxmedium !important;
+
+	@include sp {
+		font-size: $txt-xxxmedium-sp !important;
+	}
 }
 .txt-xxmedium {
 	font-size: $txt-xxmedium !important;
+
+	@include sp {
+		font-size: $txt-xxmedium-sp !important;
+	}
 }
 .txt-xmedium {
 	font-size: $txt-xmedium !important;
+
+	@include sp {
+		font-size: $txt-xmedium-sp !important;
+	}
 }
 .txt-medium {
 	font-size: $txt-medium !important;
+
+	@include sp {
+		font-size: $txt-medium-sp !important;
+	}
 }
 .txt-small {
 	font-size: $txt-small !important;
+
+	@include sp {
+		font-size: $txt-small-sp !important;
+	}
 }
 
 // テキスト配置

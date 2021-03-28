@@ -5,11 +5,17 @@
 
 #main-wrapper {
 	width: 100%;
-	min-width: 1000px;
 }
 #content-wrapper {
 	width: 1080px;
 	margin: 0 auto;
+
+	@include sp {
+		width: 75vw;
+	}
+	@include tab {
+		width: 80vw;
+	}
 }
 
 .section-wrapper {

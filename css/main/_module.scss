@@ -23,8 +23,16 @@
 .profile-wrapper {
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 	img {
 		width: $img-profile-width;
+		@include sp {
+			width: 100%;
+			height: 100%;
+		}
+		@include tab {
+			width: 45%;
+		}
 	}
 }
 .profile-text-wrapper {
@@ -32,6 +40,9 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
+	@include tab {
+		width: 45%;
+	}
 	a {
 		width: 100%;
 		img {
@@ -58,6 +69,15 @@
 				position: relative;
 				width: $img-skill-width;
 				height: $img-skill-width;
+
+				@include sp {
+					width: 17%;
+					height: auto;
+				}
+				@include tab {
+					width: 17%;
+					height: auto;
+				}
 
 				img {
 					width: 100%;
@@ -100,7 +120,18 @@
 	justify-content: space-between;
 	margin-top: 4%;
 
+	@include sp {
+		flex-wrap: wrap;
+	}
+
 	img {
+		@include sp {
+			width: 100%;
+		}
+		@include tab {
+			width: 45%;
+		}
+
 		&:first-child {
 			padding-bottom: 10%;
 		}
@@ -115,6 +146,10 @@
 	display: flex;
 	justify-content: space-between;
 	padding: 0 25%;
+
+	@include sp {
+		display: none;
+	}
 }
 .works-wrapper {
 	display: flex;
@@ -122,7 +157,10 @@
 	flex-wrap: wrap;
 
 	li {
-		width: 330px;
+		width: 32%;
 		margin-bottom: 2%;
+		@include sp {
+			width: 100%;
+		}
 	}
 }
