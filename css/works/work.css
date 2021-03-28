@@ -271,7 +271,7 @@ body {
   color: #f6f6f6;
 }
 
-.fv-wrapper {
+.fv-wrapper, .work-desc-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,7 +281,15 @@ body {
   margin-top: 7vw;
 }
 
-.fv-wrapper img {
+.fv-wrapper img, .work-desc-wrapper img {
   width: 60%;
+}
+
+.work-desc-wrapper p {
+  width: 45%;
+}
+
+.work-desc-wrapper img {
+  width: 48%;
 }
 /*# sourceMappingURL=work.css.map */

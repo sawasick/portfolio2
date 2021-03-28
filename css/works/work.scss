@@ -21,3 +21,14 @@
 		@extend .txt-medium;
 	}
 }
+
+.work-desc-wrapper {
+	@extend .fv-wrapper;
+
+	p {
+		width: 45%;
+	}
+	img {
+		width: 48%;
+	}
+}
