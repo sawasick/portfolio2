@@ -39,3 +39,9 @@
 	@extend .txt-xxxmedium;
 	text-align: center;
 }
+
+// フッター
+#footer {
+	background-color: rgba($mainColor, 0.4);
+	color: $baseColor;
+}

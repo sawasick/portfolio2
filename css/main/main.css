@@ -266,6 +266,11 @@ body {
   text-align: center;
 }
 
+#footer {
+  background-color: rgba(19, 19, 31, 0.4);
+  color: #f6f6f6;
+}
+
 /* styleGuide
 100vw = 1920px を基にサイズを決定
 

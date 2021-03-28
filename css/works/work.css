@@ -266,6 +266,11 @@ body {
   text-align: center;
 }
 
+#footer {
+  background-color: rgba(19, 19, 31, 0.4);
+  color: #f6f6f6;
+}
+
 .fv-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
