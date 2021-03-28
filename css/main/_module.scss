@@ -125,11 +125,11 @@
 	}
 
 	img {
+		width: 45%;
+		height: 45%;
+
 		@include sp {
 			width: 100%;
-		}
-		@include tab {
-			width: 45%;
 		}
 
 		&:first-child {

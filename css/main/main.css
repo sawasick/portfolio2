@@ -649,15 +649,14 @@ SP
   }
 }
 
+.inspire-img-wrapper img {
+  width: 45%;
+  height: 45%;
+}
+
 @media screen and (max-width: 480px) {
   .inspire-img-wrapper img {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 480px) and (max-width: 1079px) {
-  .inspire-img-wrapper img {
-    width: 45%;
   }
 }
 
