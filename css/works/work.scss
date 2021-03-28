@@ -1,0 +1,23 @@
+@import '../main/variables';
+@import '../main/base';
+@import '../main/layout';
+
+// Module
+.fv-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7vw;
+
+	img {
+		width: 60%;
+	}
+}
+
+.section-title {
+	@extend .txt-xxxmedium;
+}
+.text-wrapper {
+	p {
+		@extend .txt-medium;
+	}
+}
