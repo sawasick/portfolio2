@@ -54,10 +54,6 @@ body {
   opacity: 0.4;
 }
 
-.is-hide {
-  display: none;
-}
-
 .txt-xxlarge {
   font-size: 3.64583vw !important;
 }
@@ -170,10 +166,6 @@ body {
 
 .linkHover:hover {
   opacity: 0.4;
-}
-
-.is-hide {
-  display: none;
 }
 
 .txt-xxlarge {
