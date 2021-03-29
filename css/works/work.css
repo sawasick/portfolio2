@@ -490,6 +490,11 @@ body {
   }
 }
 
+.js-font-extra-ios {
+  font-family: 'Hiragino Kaku Gothic ProN' !important;
+  font-weight: bold;
+}
+
 .fv-wrapper, .work-desc-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

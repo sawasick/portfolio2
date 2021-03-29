@@ -740,4 +740,9 @@ SP
     display: none;
   }
 }
+
+.js-font-extra-ios {
+  font-family: 'Hiragino Kaku Gothic ProN' !important;
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */

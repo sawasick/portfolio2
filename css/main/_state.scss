@@ -19,3 +19,9 @@
 		display: none;
 	}
 }
+
+// iOS,iPadOSの時のみフォントを変更する
+.js-font-extra-ios {
+	font-family: 'Hiragino Kaku Gothic ProN' !important;
+	font-weight: bold;
+}
