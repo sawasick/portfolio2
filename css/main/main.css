@@ -575,6 +575,8 @@ SP
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .skills-wrapper li {
@@ -593,8 +595,8 @@ SP
 
 .skills-wrapper li ul li {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 @media screen and (max-width: 480px) {
@@ -628,7 +630,7 @@ SP
   top: 0;
   left: 0;
   width: 100%;
-  height: 60%;
+  height: 0%;
   background-color: #f6f6f6;
 }
 
