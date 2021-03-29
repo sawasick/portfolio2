@@ -76,7 +76,12 @@ body {
   background-color: #f6f6f6;
 }
 
-.link {
+.link-txt:link,
+.link-txt:visited {
+  color: #245fbb;
+}
+
+.link-underline--none {
   text-decoration: none;
 }
 
@@ -274,7 +279,12 @@ body {
   background-color: #f6f6f6;
 }
 
-.link {
+.link-txt:link,
+.link-txt:visited {
+  color: #245fbb;
+}
+
+.link-underline--none {
   text-decoration: none;
 }
 

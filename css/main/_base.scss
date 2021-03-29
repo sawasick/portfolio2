@@ -29,9 +29,14 @@ body {
 	color: $mainColor;
 	background-color: $baseColor;
 }
+// リンクテキストのスタイル
+.link-txt:link,
+.link-txt:visited {
+	color: $linkColor;
+}
 
 // a要素のアンダーライン消す
-.link {
+.link-underline--none {
 	text-decoration: none;
 }
 
