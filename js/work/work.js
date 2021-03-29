@@ -5,7 +5,7 @@ function CheckiOS() {
 		/iPad|iPhone|iPod/.test(ua) ||
 		(navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
 	) {
-		const $targets = $('.font-extra');
+		const $targets = $('.font-extra, .section-title');
 		for (let i = 0, len = $targets.length; i < len; i++) {
 			$targets.eq(i).addClass('js-font-extra-ios');
 		}
