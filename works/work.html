@@ -1,3 +1,4 @@
+<!-- '作品タイトル'→置き換え -->
 <!DOCTYPE html>
 <html lang="ja">
 	<head>
@@ -6,7 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
 		/>
-		<title>タイトル</title>
+		<title>作品タイトル</title>
 		<link rel="stylesheet" href="../css/normalize.css" />
 		<link rel="stylesheet" href="../css/works/work.css" />
 		<link rel="icon" type="image/x-icon" href="../images/favicon.png" />
@@ -18,20 +19,27 @@
 				<div id="content-wrapper">
 					<div class="fv-wrapper">
 						<div class="fv-text-wrapper">
-							<h1 class="txt-xlarge font-extra">作品名</h1>
-							<p class="txt-xxmedium">作品の一言説明</p>
+							<h1 class="txt-large font-extra">作品タイトル</h1>
+							<p class="txt-medium">一言説明</p>
+							<p class="txt-medium">
+								<a href="実際のサイトのリンク" target="_blank" class="link-txt">
+									実際のサイトはこちらから
+								</a>
+							</p>
 						</div>
-						<img src="../images/work.png" alt="作品のfv画像" />
+						<img
+							src="../images/works/portfolio/作品タイトル1.svg"
+							alt="作品タイトルのfv画像"
+						/>
 					</div>
 
 					<div class="subsection-wrapper">
 						<h1 class="section-title">概要</h1>
 						<div class="text-wrapper">
 							<p class="txt-xmedium font-emphasis">
-								ここに作品の概要を書きます。ここに作品の概要を書きます。ここに作品の概要を書きます。
-								ここに作品の概要を書きます。ここに作品の概要を書きます。ここに作品の概要を書きます。
-								ここに作品の概要を書きます。ここに作品の概要を書きます。ここに作品の概要を書きます。
-								ここに作品の概要を書きます。ここに作品の概要を書きます。ここに作品の概要を書きます。
+								ここに概要を書きます。<br />
+								ここに概要を書きます。<br />
+								ここに概要を書きます。
 							</p>
 						</div>
 					</div>
@@ -46,22 +54,42 @@
 					<div class="subsection-wrapper">
 						<h1 class="section-title">使用技術</h1>
 						<div class="text-wrapper">
-							<p class="txt-xmedium font-emphasis">
-								ここに使用技術を書きます。ここに使用技術を書きます。ここに使用技術を書きます。
-								HTML / CSS / Javascript / illustrator / figma
-							</p>
+							<p class="txt-xmedium font-emphasis">XXXX / XXXX / XXXX</p>
 						</div>
 					</div>
 
 					<div class="subsection-wrapper">
-						<h1 class="section-title">制作背景</h1>
+						<h1 class="section-title">制作背景・コンセプトなど</h1>
 						<div class="text-wrapper">
 							<p class="txt-xmedium font-emphasis">
-								ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。
-								ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。
-								ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。
-								ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。ここに作品の制作背景を書きます。
+								制作背景やコンセプトなどを書きます。
 							</p>
+						</div>
+					</div>
+					<div class="subsection-wrapper">
+						<h1 class="section-title">デザイン・工夫点など</h1>
+						<div class="text-wrapper">
+							<div class="work-desc-wrapper">
+								<p class="txt-medium font-emphasis">
+									デザインの特徴などを書きます。
+								</p>
+								<img
+									src="../images/works/portfolio/作品名2.svg"
+									alt="デザインの説明画像"
+								/>
+							</div>
+							<div class="work-desc-wrapper">
+								<p class="txt-medium font-emphasis is-hide--pc">
+									工夫点などを書きます。(pc表示)
+								</p>
+								<img
+									src="../images/works/portfolio/作品名3.svg"
+									alt="工夫点の説明画像"
+								/>
+								<p class="txt-medium font-emphasis is-hide--sp">
+									工夫点などを書きます。(sp表示)
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -70,6 +98,6 @@
 		<footer id="footer" class="txt-small txt-center">
 			@2021 sawasick studio
 		</footer>
-		<script type="text/javascript" src="../js/main.js" defer></script>
+		<script type="text/javascript" src="../js/work/work.js" defer></script>
 	</body>
 </html>
