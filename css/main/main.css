@@ -719,6 +719,10 @@ SP
   }
 }
 
+.works-wrapper li img {
+  width: 100%;
+}
+
 .is-hide {
   display: none;
 }
