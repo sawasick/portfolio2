@@ -5,24 +5,30 @@
 /* Top */
 .top-wrapper {
 	position: relative;
+	height: 100vh;
 	p {
 		position: absolute;
 	}
 }
 .top__title {
-	top: 12vw;
-	left: 3vw;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
-.top__subtitle {
-	top: 34vw;
-	right: 3vw;
-}
+// .top__subtitle {
+// 	top: 34vw;
+// 	right: 3vw;
+// }
 
 /* About */
 // profile
 .profile-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	img {
 		width: $img-profile-width;
@@ -108,10 +114,9 @@
 .vision-wrapper {
 	p:first-child {
 		position: relative;
-
-		span {
-			background: linear-gradient($baseColor 70%, $accentColor 0);
-		}
+	}
+	span {
+		background: linear-gradient($baseColor 70%, $accentColor 0);
 	}
 }
 

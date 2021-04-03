@@ -494,6 +494,7 @@ SP
 /* Top */
 .top-wrapper {
   position: relative;
+  height: 100vh;
 }
 
 .top-wrapper p {
@@ -501,13 +502,14 @@ SP
 }
 
 .top__title {
-  top: 12vw;
-  left: 3vw;
-}
-
-.top__subtitle {
-  top: 34vw;
-  right: 3vw;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
 /* About */
@@ -515,9 +517,8 @@ SP
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -638,7 +639,7 @@ SP
   position: relative;
 }
 
-.vision-wrapper p:first-child span {
+.vision-wrapper span {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
   background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
 }
