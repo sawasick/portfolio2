@@ -73,6 +73,10 @@
 	@include sp {
 		width: 75%;
 	}
+
+	@include tab {
+		width: 80%;
+	}
 }
 
 // フッター
