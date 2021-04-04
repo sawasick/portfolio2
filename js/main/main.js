@@ -57,11 +57,11 @@ $(window).scroll(function () {
 		thisPos = $(this).offset().top;
 		const scroll = $(window).scrollTop();
 		const $paId = $(this).parent().attr('id');
-		const per = 100 - jsonSkill[$paId];
+		const per = (100 - jsonSkill[$paId]) * 0.8;
 		const currentHeight = $(this).css('height');
 		if (
 			currentHeight === '120px' &&
-			scroll > thisPos - windowHeight + windowHeight / 2
+			scroll > thisPos - windowHeight + windowHeight / 3
 		) {
 			$(this).animate(
 				{
