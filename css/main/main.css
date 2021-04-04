@@ -469,6 +469,12 @@ body {
   z-index: 100;
 }
 
+@media screen and (max-width: 480px) {
+  #header {
+    height: 7vh;
+  }
+}
+
 .header-wrapper {
   width: 1080px;
   margin: 0 auto;
@@ -478,6 +484,12 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .header-wrapper {
+    width: 75%;
+  }
 }
 
 #footer {
@@ -701,6 +713,18 @@ SP
   transition: all 0.3s ease;
   height: auto !important;
   top: 80% !important;
+}
+
+@media screen and (max-width: 480px) {
+  .skill-caption {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .skill-caption {
+    display: none;
+  }
 }
 
 /* Works */

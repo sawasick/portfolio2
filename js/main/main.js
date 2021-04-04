@@ -77,8 +77,9 @@ $(function () {
 			const $paId = $(this).parent().attr('id');
 			const per = (100 - jsonSkill[$paId]) * 0.8;
 			const currentHeight = $(this).css('height');
+			const firstHeight = $(this).prev().css('height');
 			if (
-				currentHeight === '120px' &&
+				currentHeight === firstHeight &&
 				scroll > thisPos - windowHeight + windowHeight / 3
 			) {
 				$(this).animate(

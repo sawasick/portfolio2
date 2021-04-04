@@ -148,6 +148,13 @@
 	transition: all 0.3s ease;
 	height: auto !important;
 	top: 80% !important;
+
+	@include sp {
+		display: none;
+	}
+	@include tab {
+		display: none;
+	}
 }
 
 /* Works */
