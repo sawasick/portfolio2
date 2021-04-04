@@ -2,6 +2,30 @@
 
 @import 'variables';
 
+/* header */
+.header-wrapper {
+	height: 100%;
+	background-color: $baseColor;
+
+	a {
+		color: $mainColor !important;
+	}
+	p {
+		position: relative;
+		margin: auto 0;
+	}
+
+	ul {
+		position: relative;
+		display: flex;
+		margin: auto 0;
+
+		li:first-child {
+			margin-right: 2vw;
+		}
+	}
+}
+
 /* Top */
 .top-wrapper {
 	position: relative;

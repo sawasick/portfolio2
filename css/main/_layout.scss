@@ -52,6 +52,21 @@
 	margin: 8% 0 3% 0;
 }
 
+// ヘッダー
+#header {
+	position: fixed;
+	width: 100%;
+	height: 10vh;
+	background-color: $baseColor;
+	z-index: 100;
+}
+.header-wrapper {
+	width: 1080px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
 // フッター
 #footer {
 	background-color: rgba($mainColor, 0.4);
