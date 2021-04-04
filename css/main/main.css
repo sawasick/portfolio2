@@ -559,6 +559,15 @@ SP
 }
 
 /* About */
+.vision-wrapper p:first-child {
+  position: relative;
+}
+
+.vision-wrapper span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
+  background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
+}
+
 .profile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,52 +701,6 @@ SP
   transition: all 0.3s ease;
   height: auto !important;
   top: 80% !important;
-}
-
-.vision-wrapper p:first-child {
-  position: relative;
-}
-
-.vision-wrapper span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
-  background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
-}
-
-.inspire-img-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 4%;
-}
-
-@media screen and (max-width: 480px) {
-  .inspire-img-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-.inspire-img-wrapper img {
-  width: 45%;
-  height: 45%;
-}
-
-@media screen and (max-width: 480px) {
-  .inspire-img-wrapper img {
-    width: 100%;
-  }
-}
-
-.inspire-img-wrapper img:first-child {
-  padding-bottom: 10%;
-}
-
-.inspire-img-wrapper img:last-child {
-  padding-top: 10%;
 }
 
 /* Works */

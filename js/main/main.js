@@ -49,14 +49,6 @@ function Loadjson() {
 	);
 }
 
-document.addEventListener(
-	'DOMContentLoaded',
-	function () {
-		CheckiOS();
-		Loadjson();
-	},
-	false
-);
 $(function () {
 	let headerFlag = false;
 	$(window).scroll(function () {
@@ -112,3 +104,12 @@ $(function () {
 		return false;
 	});
 });
+
+document.addEventListener(
+	'DOMContentLoaded',
+	function () {
+		CheckiOS();
+		Loadjson();
+	},
+	false
+);
