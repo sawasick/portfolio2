@@ -10,8 +10,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -21,6 +23,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -35,8 +38,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -46,6 +51,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -162,6 +168,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium, .text-wrapper p {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 
@@ -215,8 +231,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -226,6 +244,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -240,8 +259,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -251,6 +272,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -365,6 +387,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium, .text-wrapper p {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 

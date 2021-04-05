@@ -18,18 +18,8 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
-SP
-100vw = 375px を基にサイズを決定
-.txt-xxlarge : 22px
-.txt-xlarge : 20px
-.txt-large : 19px
-.txt-xxxmedium : 18px
-.txt-xxmedium : 16px
-.txt-xmedium : 14px
-.txt-medium : 12px 基準サイズ
-.txt-small : 11px
 */
 $txt-base: 1920;
 $txt-xxlarge: 70 * 100vw / #{$txt-base};
@@ -39,9 +29,22 @@ $txt-xxxmedium: 30 * 100vw / #{$txt-base};
 $txt-xxmedium: 28 * 100vw / #{$txt-base};
 $txt-xmedium: 24 * 100vw / #{$txt-base};
 $txt-medium: 22 * 100vw / #{$txt-base};
-// $txt-small: 16 * 100vw / #{$text-base};
+$txt-xsmall: 22px;
 $txt-small: 16px;
 
+/*
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
+.txt-small : 11px
+*/
 $txt-base-sp: 375;
 $txt-xxlarge-sp: 22 * 100vw / #{$txt-base-sp};
 $txt-xlarge-sp: 20 * 100vw / #{$txt-base-sp};
@@ -50,6 +53,7 @@ $txt-xxxmedium-sp: 18 * 100vw / #{$txt-base-sp};
 $txt-xxmedium-sp: 16 * 100vw / #{$txt-base-sp};
 $txt-xmedium-sp: 14 * 100vw / #{$txt-base-sp};
 $txt-medium-sp: 12 * 100vw / #{$txt-base-sp};
+$txt-xsmall-sp: 12px;
 $txt-small-sp: 11px;
 
 // スキルアイコンのサイズ

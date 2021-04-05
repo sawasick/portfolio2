@@ -99,6 +99,13 @@ body {
 		font-size: $txt-medium-sp !important;
 	}
 }
+.txt-xsmall {
+	font-size: $txt-xsmall !important;
+
+	@include sp {
+		font-size: $txt-xsmall-sp !important;
+	}
+}
 .txt-small {
 	font-size: $txt-small !important;
 
