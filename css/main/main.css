@@ -10,8 +10,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -21,6 +23,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -35,8 +38,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -46,6 +51,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -162,6 +168,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 
@@ -215,8 +231,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -226,6 +244,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -240,8 +259,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -251,6 +272,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -365,6 +387,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 
@@ -461,6 +493,43 @@ body {
   margin: 8% 0 3% 0;
 }
 
+#header {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: #f6f6f6;
+  z-index: 100;
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    height: 7vh;
+  }
+}
+
+.header-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .header-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .header-wrapper {
+    width: 80%;
+  }
+}
+
 #footer {
   background-color: rgba(19, 19, 31, 0.4);
   color: #f6f6f6;
@@ -477,8 +546,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -488,12 +559,41 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
+/* header */
+.header-wrapper {
+  height: 100%;
+  background-color: #f6f6f6;
+}
+
+.header-wrapper a {
+  color: #13131f !important;
+}
+
+.header-wrapper p {
+  position: relative;
+  margin: auto 0;
+}
+
+.header-wrapper ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto 0;
+}
+
+.header-wrapper ul li:first-child {
+  margin-right: 2vw;
+}
+
 /* Top */
 .top-wrapper {
   position: relative;
+  height: 100vh;
 }
 
 .top-wrapper p {
@@ -501,23 +601,32 @@ SP
 }
 
 .top__title {
-  top: 12vw;
-  left: 3vw;
-}
-
-.top__subtitle {
-  top: 34vw;
-  right: 3vw;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
 }
 
 /* About */
+.vision-wrapper p:first-child {
+  position: relative;
+}
+
+.vision-wrapper span {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
+  background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
+}
+
 .profile-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -581,7 +690,7 @@ SP
 
 .skills-wrapper li {
   width: 100%;
-  margin: 0.5% 0;
+  margin: 1% 0;
 }
 
 .skills-wrapper li ul {
@@ -596,7 +705,7 @@ SP
 .skills-wrapper li ul li {
   position: relative;
   width: 120px;
-  height: 120px;
+  height: 150px;
 }
 
 @media screen and (max-width: 480px) {
@@ -615,7 +724,7 @@ SP
 
 .skills-wrapper li ul li img {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .skills-wrapper li ul li img:last-child {
@@ -624,60 +733,39 @@ SP
   left: 0;
 }
 
-.skills-wrapper li ul li span:before {
-  content: '';
+.skills-wrapper li ul li span {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 0%;
+  height: 80%;
   background-color: #f6f6f6;
 }
 
-.vision-wrapper p:first-child {
-  position: relative;
+.skill-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.vision-wrapper p:first-child span {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #f6f6f6), color-stop(0, #ffcc33));
-  background: linear-gradient(#f6f6f6 70%, #ffcc33 0);
-}
-
-.inspire-img-wrapper {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 4%;
+.skill-caption {
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  height: auto !important;
+  top: 80% !important;
 }
 
 @media screen and (max-width: 480px) {
-  .inspire-img-wrapper {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  .skill-caption {
+    display: none;
   }
 }
 
-.inspire-img-wrapper img {
-  width: 45%;
-  height: 45%;
-}
-
-@media screen and (max-width: 480px) {
-  .inspire-img-wrapper img {
-    width: 100%;
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .skill-caption {
+    display: none;
   }
-}
-
-.inspire-img-wrapper img:first-child {
-  padding-bottom: 10%;
-}
-
-.inspire-img-wrapper img:last-child {
-  padding-top: 10%;
 }
 
 /* Works */
@@ -719,8 +807,54 @@ SP
   }
 }
 
-.works-wrapper li img {
+.work-wrapper {
+  position: relative;
+}
+
+.work-wrapper:hover .work-mask {
+  opacity: 1;
+}
+
+.work-wrapper img {
   width: 100%;
+}
+
+.work-wrapper a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.work-mask {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 96%;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+@media screen and (max-width: 480px) {
+  .work-mask {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .work-mask {
+    display: none;
+  }
+}
+
+.work-mask figcaption {
+  color: #f6f6f6;
+  padding-left: 1vw;
 }
 
 .is-hide {

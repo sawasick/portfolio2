@@ -2,27 +2,63 @@
 
 @import 'variables';
 
+/* header */
+.header-wrapper {
+	height: 100%;
+	background-color: $baseColor;
+
+	a {
+		color: $mainColor !important;
+	}
+	p {
+		position: relative;
+		margin: auto 0;
+	}
+
+	ul {
+		position: relative;
+		display: flex;
+		margin: auto 0;
+
+		li:first-child {
+			margin-right: 2vw;
+		}
+	}
+}
+
 /* Top */
 .top-wrapper {
 	position: relative;
+	height: 100vh;
 	p {
 		position: absolute;
 	}
 }
 .top__title {
-	top: 12vw;
-	left: 3vw;
-}
-.top__subtitle {
-	top: 34vw;
-	right: 3vw;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
 }
 
 /* About */
+// vision
+.vision-wrapper {
+	p:first-child {
+		position: relative;
+	}
+	span {
+		background: linear-gradient($baseColor 70%, $accentColor 0);
+	}
+}
+
 // profile
 .profile-wrapper {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	img {
 		width: $img-profile-width;
@@ -61,7 +97,7 @@
 
 	li {
 		width: 100%;
-		margin: 0.5% 0;
+		margin: 1% 0;
 
 		ul {
 			display: flex;
@@ -70,7 +106,7 @@
 			li {
 				position: relative;
 				width: $img-skill-width;
-				height: $img-skill-width;
+				height: $img-skill-width + 30px;
 
 				@include sp {
 					width: 17%;
@@ -83,63 +119,41 @@
 
 				img {
 					width: 100%;
-					height: 100%;
+					height: 80%;
 					&:last-child {
 						position: absolute;
 						top: 0;
 						left: 0;
 					}
 				}
-				span:before {
-					content: '';
+				span {
 					position: absolute;
 					top: 0;
 					left: 0;
 					width: 100%;
-					height: 0%;
+					height: 80%;
 					background-color: $baseColor;
 				}
 			}
 		}
 	}
 }
-
-// vision-wrapper
-.vision-wrapper {
-	p:first-child {
-		position: relative;
-
-		span {
-			background: linear-gradient($baseColor 70%, $accentColor 0);
-		}
-	}
+.skill-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
 }
-
-// inspire
-.inspire-img-wrapper {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 4%;
+.skill-caption {
+	text-align: center;
+	transition: all 0.3s ease;
+	height: auto !important;
+	top: 80% !important;
 
 	@include sp {
-		flex-wrap: wrap;
+		display: none;
 	}
-
-	img {
-		width: 45%;
-		height: 45%;
-
-		@include sp {
-			width: 100%;
-		}
-
-		&:first-child {
-			padding-bottom: 10%;
-		}
-		&:last-child {
-			padding-top: 10%;
-		}
+	@include tab {
+		display: none;
 	}
 }
 
@@ -164,9 +178,45 @@
 		@include sp {
 			width: 100%;
 		}
+	}
+}
+.work-wrapper {
+	position: relative;
 
-		img {
-			width: 100%;
-		}
+	&:hover .work-mask {
+		opacity: 1;
+	}
+	img {
+		width: 100%;
+	}
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+}
+.work-mask {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 96%;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease;
+	opacity: 0;
+
+	@include sp {
+		display: none;
+	}
+	@include tab {
+		display: none;
+	}
+
+	figcaption {
+		color: $baseColor;
+		padding-left: 1vw;
 	}
 }

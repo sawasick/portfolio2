@@ -13,65 +13,77 @@
 	</head>
 
 	<body>
-		<!-- <header>
-      <p>
-        <span>TERAZAWA</span><br>
-        <span>MIZUKI</span>
-        <ul>
-          <li><a href="#Concept">Concept</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="Works">Works</a></li>
-        </ul>
-      </p>
-    </header> -->
+		<header id="header">
+			<div class="header-wrapper is-hide">
+				<p class="txt-small font-emphasis txt-center">
+					<a href="#Top" class="link-underline--none">
+						<span>TERAZAWA</span><br />
+						<span>MIZUKI</span>
+					</a>
+				</p>
+				<ul class="txt-xxxmedium font-emphasis">
+					<li><a href="#About" class="link-underline--none">About</a></li>
+					<li><a href="#Works" class="link-underline--none">Works</a></li>
+				</ul>
+			</div>
+		</header>
 		<main>
 			<div id="main-wrapper">
 				<div id="content-wrapper">
 					<section id="Top">
 						<div class="section-wrapper">
 							<div class="top-wrapper">
-								<img src="images/main/fv.png" alt="FV画像" class="img-fv" />
 								<p class="txt-xxlarge font-extra top__title">TERAZAWA MIZUKI</p>
-								<p class="txt-xlarge font-extra top__subtitle">portfolio</p>
 							</div>
 						</div>
 					</section>
 
-					<section id="Concept">
-						<div class="section-wrapper">
-							<h1 class="section-title">Concept</h1>
-							<h2 class="section-subtitle">aim</h2>
-							<div class="text-wrapper">
-								<p class="txt-xmedium font-emphasis">
-									このポートフォリオを通して、<br />
-									制作した作品だけではなく、自分のことについて知ってもらう。
-								</p>
-								<p class="txt-medium">
-									そういった目的を持ってこのポートフォリオを制作しました。
-								</p>
-							</div>
-						</div>
-					</section>
-
+					<!-- ▼ Aboutセクションここから -->
 					<section id="About">
 						<div class="section-wrapper">
 							<h1 class="section-title">About</h1>
+							<!-- ▼ visionここから -->
+							<div class="subsection-wrapper">
+								<h2 class="section-subtitle">vision</h2>
+								<div class="text-wrapper">
+									<div class="vision-wrapper">
+										<p class="txt-xxxmedium font-emphasis txt-center">
+											<span
+												>ユーザーや社会に必要とされるコンテンツやサービスに携われる</span
+											>
+										</p>
+										<p class="txt-xxxmedium font-emphasis txt-center">
+											<span>フロントエンドエンジニアになりたいです。</span>
+										</p>
+									</div>
+									<div>
+										<p class="txt-medium font-emphasis">
+											web開発の領域で技術や知見を増やして自分のできることを生かしながら、<br />
+											人々の生活をより良いものにできるコンテンツやサービス開発に携わりたいです。
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- ▲ visionここまで -->
+
+							<!-- ▼ profileここから -->
 							<div class="subsection-wrapper">
 								<h2 class="section-subtitle">profile</h2>
 								<div class="profile-wrapper text-wrapper">
-									<img src="images/main/profile.png" alt="プロフィール画像" />
+									<img src="images/main/profile2.png" alt="プロフィール画像" />
 									<div class="profile-text-wrapper">
 										<p class="txt-xxmedium font-emphasis">寺澤 瑞基</p>
 										<div class="profile-text-desc-wrapper">
 											<p class="txt-small">
 												名古屋市立大学芸術工学部情報環境デザイン学科4年
 											</p>
-											<p class="txt-small">名古屋生まれの名古屋育ち</p>
 											<p class="txt-small">Apple製品が好きでMac歴は9年</p>
 											<p class="txt-small">
 												新しいことにチャレンジする意欲と幅広い興味を持っています
 											</p>
-											<p class="txt-small">最近はVue.jsとTypeScriptを勉強中</p>
+											<p class="txt-small">
+												最近はVue.jsとTypeScriptを勉強中です
+											</p>
 										</div>
 										<a href="https://github.com/sawasick" target="_blank">
 											<img src="images/main/github.svg" alt="GitHubのロゴ" />
@@ -79,52 +91,62 @@
 									</div>
 								</div>
 							</div>
-							<!-- <div class="subsection-wrapper">
-                <h2 class="section-subtitle">my favorite songs</h2>
-              </div> -->
+							<!-- ▲ profileここまで -->
+
+							<!-- ▼ skillsここから -->
 							<div class="subsection-wrapper">
 								<h2 class="section-subtitle">skills</h2>
 								<div class="text-wrapper">
 									<ul class="skills-wrapper">
 										<li>
 											<ul>
-												<li>
+												<li id="illustrator">
 													<img
 														src="images/skills/main/illustrator.svg"
 														alt="illustrator"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/illustrator-line.svg"
 														alt="illustrator枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small"
+														>illustrator</span
+													>
 												</li>
-												<li>
+												<li id="photoshop">
 													<img
 														src="images/skills/main/photoshop.svg"
 														alt="photoshop"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/photoshop-line.svg"
 														alt="photoshop枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Photoshop</span>
 												</li>
-												<li>
+												<li id="xd">
 													<img src="images/skills/main/xd.svg" alt="xd" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/xd-line.svg"
 														alt="xd枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Adobe XD</span>
 												</li>
-												<li>
+												<li id="figma">
 													<img src="images/skills/main/figma.svg" alt="figma" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/figma-line.svg"
 														alt="figma枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Figma</span>
 												</li>
 												<li>
 													<img src="images/skills/main/dummy.svg" alt="dummy" />
@@ -139,97 +161,119 @@
 										</li>
 										<li>
 											<ul>
-												<li>
+												<li id="html5">
 													<img src="images/skills/main/html5.svg" alt="html5" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/html5-line.svg"
 														alt="html5枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">HTML5</span>
 												</li>
-												<li>
+												<li id="css3">
 													<img src="images/skills/main/css3.svg" alt="css3" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/css3-line.svg"
 														alt="css3枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">CSS3</span>
 												</li>
-												<li>
+												<li id="javascript">
 													<img
 														src="images/skills/main/javascript.svg"
 														alt="javascript"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/javascript-line.svg"
 														alt="javascript枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small"
+														>Javascript</span
+													>
 												</li>
-												<li>
+												<li id="cssdesign">
 													<img
 														src="images/skills/main/cssdesign.svg"
 														alt="cssdesign"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/cssdesign-line.svg"
 														alt="cssdesign枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">CSS設計</span>
 												</li>
-												<li>
+												<li id="git">
 													<img src="images/skills/main/git.svg" alt="git" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/git-line.svg"
 														alt="git枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">git</span>
 												</li>
 											</ul>
 										</li>
 										<li>
 											<ul>
-												<li>
+												<li id="sass">
 													<img src="images/skills/main/sass.svg" alt="sass" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/sass-line.svg"
 														alt="sass枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Sass</span>
 												</li>
-												<li>
+												<li id="jquery">
 													<img
 														src="images/skills/main/jquery.svg"
 														alt="jquery"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/jquery-line.svg"
 														alt="jquery枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">jQuery</span>
 												</li>
-												<li>
+												<li id="typescript">
 													<img
 														src="images/skills/main/typescript.svg"
 														alt="typescript"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/typescript-line.svg"
 														alt="typescript枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small"
+														>TypeScript</span
+													>
 												</li>
-												<li>
+												<li id="vue">
 													<img src="images/skills/main/vue.svg" alt="vue" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/vue-line.svg"
 														alt="vue枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Vue.js</span>
 												</li>
 												<li>
 													<img src="images/skills/main/dummy.svg" alt="dummy" />
-													<span class="is-hide"></span>
+													<span class="js-skill" class="is-hide"></span>
 													<img
 														class="is-hide"
 														src="images/skills/main/dummy.svg"
@@ -240,155 +284,77 @@
 										</li>
 										<li>
 											<ul>
-												<li>
+												<li id="python">
 													<img
 														src="images/skills/main/python.svg"
 														alt="python"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/python-line.svg"
 														alt="python枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">Python</span>
 												</li>
-												<li>
+												<li id="rails">
 													<img src="images/skills/main/rails.svg" alt="rails" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/rails-line.svg"
 														alt="rails枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small"
+														>Ruby on Rails</span
+													>
 												</li>
-												<li>
+												<li id="java">
 													<img src="images/skills/main/java.svg" alt="java" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/java-line.svg"
 														alt="java枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">java</span>
 												</li>
-												<li>
+												<li id="unity">
 													<img src="images/skills/main/unity.svg" alt="unity" />
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/unity-line.svg"
 														alt="unity枠線"
+														class="skill-frame"
 													/>
+													<span class="skill-caption txt-small">unity</span>
 												</li>
-												<li>
+												<li id="processing">
 													<img
 														src="images/skills/main/processing.svg"
 														alt="processing"
 													/>
-													<span></span>
+													<span class="js-skill"></span>
 													<img
 														src="images/skills/line/processing-line.svg"
 														alt="processing枠線"
+														class="skill-frame"
 													/>
-												</li>
-											</ul>
-										</li>
-										<li>
-											<ul>
-												<li>
-													<img
-														src="images/skills/main/premiere.svg"
-														alt="premiere"
-													/>
-													<span></span>
-													<img
-														src="images/skills/line/premiere-line.svg"
-														alt="premiere枠線"
-													/>
-												</li>
-												<li>
-													<img
-														src="images/skills/main/aftereffects.svg"
-														alt="aftereffects.svg"
-													/>
-													<span></span>
-													<img
-														src="images/skills/line/aftereffects-line.svg"
-														alt="aftereffects.svg枠線"
-													/>
-												</li>
-												<li>
-													<img src="images/skills/main/logic.svg" alt="logic" />
-													<span></span>
-													<img
-														src="images/skills/line/logic-line.svg"
-														alt="logic枠線"
-													/>
-												</li>
-												<li>
-													<img src="images/skills/main/dummy.svg" alt="dummy" />
-													<span class="is-hide"></span>
-													<img
-														class="is-hide"
-														src="images/skills/main/dummy.svg"
-														alt="dummy枠線"
-													/>
-												</li>
-												<li>
-													<img src="images/skills/main/dummy.svg" alt="dummy" />
-													<span class="is-hide"></span>
-													<img
-														class="is-hide"
-														src="images/skills/main/dummy.svg"
-														alt="dummy枠線"
-													/>
+													<span class="skill-caption txt-small"
+														>Processing</span
+													>
 												</li>
 											</ul>
 										</li>
 									</ul>
 								</div>
 							</div>
-							<div class="subsection-wrapper">
-								<h2 class="section-subtitle">vision</h2>
-								<div class="text-wrapper">
-									<div class="vision-wrapper">
-										<p class="txt-large font-emphasis txt-center">
-											<span
-												>誰かの生活が少し便利になるコンテンツを作りたい</span
-											>
-										</p>
-										<!-- <p class="txt-large font-emphasis txt-center">
-											少し便利になる
-										</p>
-										<p class="txt-large font-emphasis txt-right">
-											コンテンツを作りたい」
-										</p> -->
-									</div>
-									<div>
-										<p class="txt-medium font-emphasis">
-											ここでいうコンテンツとはwebサイトやwebサービスのことです。<br />
-											1つのコンテンツが全ての人にとって使いやすく必要とされているものとは限らないと思います。<br />
-											そして、それが使う人の生活の全てを物凄く便利にするとは思いません。<br />
-											ですが、誰かにとって少しでも生活が便利になる、必要な存在になる。<br />
-											そんなコンテンツに携われるエンジニアになりたいと私は考えています。<br />
-										</p>
-									</div>
-								</div>
-							</div>
-							<div class="subsection-wrapper">
-								<h2 class="section-subtitle">inspire</h2>
-								<div class="text-wrapper">
-									<p class="txt-medium font-emphasis">
-										大学祭や作品展示会で先輩がwebサイトを制作していたのがwebに興味を持ったきっかけです。<br />
-										サイトデザインからコーディングまで全て自分たちで行っている先輩たちに憧れて、自分もwebサイトを作ってみたいと思いました。<br />
-										｢卓展｣という作品展示会でwebサイトを制作するプロジェクトに参加して初めてデザインから実装までを行い、webサイトを制作しました。<br />
-										webプログラミングの勉強をするうちに、今までは見えなかった視点でwebサイトが見えるようになり、奥深さとやりがいを感じました。<br />
-										そしてユーザーとの接点を設計・開発する仕事に関わっていきたいと考えるようになりました。<br />
-									</p>
-								</div>
-								<div class="inspire-img-wrapper">
-									<img src="images/main/assort.png" alt="Assortの画像" />
-									<img src="images/main/code.svg" alt="coDeの画像" />
-								</div>
-							</div>
+							<!-- ▲ skillsここまで -->
 						</div>
 					</section>
+					<!-- ▲ Aboutセクションここまで -->
 
+					<!-- ▼ Worksセクションここから -->
 					<section id="Works">
 						<div class="section-wrapper">
 							<h1 class="section-title">Works</h1>
@@ -400,63 +366,127 @@
 							</ul> -->
 							<div class="subsection-wrapper">
 								<ul class="works-wrapper">
+									<!-- ▼ 旧Portfolioここから -->
 									<li>
-										<a href="works/portfolio.html" target="_blank">
+										<div class="work-wrapper">
 											<img
 												src="images/works/portfolio/portfolio.svg"
 												alt="旧portfolioサイト"
 											/>
-										</a>
+											<a href="works/portfolio.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">Portfolio1</p>
+													<p class="txt-xsmall">
+														Web<br />以前制作したPFサイト
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ 旧Portfolioここまで -->
+
+									<!-- ▼ BalloonMailここから -->
 									<li>
-										<a href="works/balloonmail.html" target="_blank">
+										<div class="work-wrapper">
 											<img
 												src="images/works/balloonmail/balloonmail.svg"
 												alt="BalloonMail"
 											/>
-										</a>
+											<a href="works/balloonmail.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">Balloon Mail</p>
+													<p class="txt-xsmall">
+														Web<br />思いをバルーンに乗せて飛ばす
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ BalloonMailここまで -->
+
+									<!-- ▼ GearLoveここから -->
 									<li>
-										<a href="works/gearlove.html" target="_blank">
+										<div class="work-wrapper">
 											<img
 												src="images/works/gearlove/gearlove.svg"
 												alt="GearLove"
 											/>
-										</a>
+											<a href="works/gearlove.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">Gear Love</p>
+													<p class="txt-xsmall">
+														Web/Music<br />リリックウェブサイト
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ GearLoveここまで -->
+
+									<!-- ▼ Pileここから -->
 									<li>
-										<a href="works/pile.html" target="_blank">
+										<div class="work-wrapper">
 											<img src="images/works/pile/pile.svg" alt="Pile" />
-										</a>
+											<a href="works/pile.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">Pile</p>
+													<p class="txt-xsmall">
+														UX/UI<br />メンタルヘルスをまもる
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ Pileここまで -->
+
+									<!-- ▼ nomnomここから -->
 									<li>
-										<a href="works/hamburger_nomnom.html" target="_blank">
+										<div class="work-wrapper">
 											<img
 												src="images/works/hamburger_nomnom/hamburger_nomnom.svg"
 												alt="Hamburger_nomnom"
 											/>
-										</a>
+											<a href="works/hamburger_nomnom.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">Hamburger nomnom</p>
+													<p class="txt-xsmall">
+														Web<br />ハンバーガーを完成させよう
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ nomnomここまで -->
+
+									<!-- ▼ L.C.Lここから -->
 									<li>
-										<a href="works/parkingsimulator.html" target="_blank">
-											<img
-												src="images/works/parkingsimulator/parkingsimulator.png"
-												alt="Parking Simulator"
-											/>
-										</a>
-									</li>
-									<li>
-										<a href="works/lcl.html" target="_blank">
+										<div class="work-wrapper">
 											<img
 												src="images/works/lcl/lcl.png"
 												alt="Lead Communication and Link"
 											/>
-										</a>
+											<a href="works/lcl.html" target="_blank"></a>
+											<div class="work-mask">
+												<figcaption>
+													<p class="txt-large">L.C.L</p>
+													<p class="txt-xsmall">
+														Web<br />ハッカソンをブーストする
+													</p>
+												</figcaption>
+											</div>
+										</div>
 									</li>
+									<!-- ▲ L.C.Lここまで -->
 								</ul>
 							</div>
 						</div>
 					</section>
+					<!-- ▲ Workセクションここまで -->
 				</div>
 			</div>
 		</main>

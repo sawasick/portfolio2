@@ -10,8 +10,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -21,6 +23,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -35,8 +38,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -46,6 +51,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -162,6 +168,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium, .text-wrapper p {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 
@@ -215,8 +231,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -226,6 +244,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -240,8 +259,10 @@ PC
 .txt-xxmedium : 28px
 .txt-xmedium : 24px
 .txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
 .txt-small : 16px
-
+*/
+/*
 SP
 100vw = 375px を基にサイズを決定
 .txt-xxlarge : 22px
@@ -251,6 +272,7 @@ SP
 .txt-xxmedium : 16px
 .txt-xmedium : 14px
 .txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
 .txt-small : 11px
 */
 /* メディアクエリ  */
@@ -365,6 +387,16 @@ body {
 @media screen and (max-width: 480px) {
   .txt-medium, .text-wrapper p {
     font-size: 3.2vw !important;
+  }
+}
+
+.txt-xsmall {
+  font-size: 22px !important;
+}
+
+@media screen and (max-width: 480px) {
+  .txt-xsmall {
+    font-size: 12px !important;
   }
 }
 
@@ -459,6 +491,43 @@ body {
 .section-subtitle {
   text-align: center;
   margin: 8% 0 3% 0;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  background-color: #f6f6f6;
+  z-index: 100;
+}
+
+@media screen and (max-width: 480px) {
+  #header {
+    height: 7vh;
+  }
+}
+
+.header-wrapper {
+  width: 1080px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 480px) {
+  .header-wrapper {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1079px) {
+  .header-wrapper {
+    width: 80%;
+  }
 }
 
 #footer {
