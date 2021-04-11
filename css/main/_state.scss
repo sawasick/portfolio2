@@ -25,3 +25,27 @@
 	font-family: 'Hiragino Kaku Gothic ProN' !important;
 	font-weight: bold;
 }
+
+// Topアニメーション
+@keyframes fadeOutLtoR {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: 100vw;
+	}
+}
+@keyframes fadeOutRtoL {
+	0% {
+		left: 0;
+	}
+	100% {
+		left: -100vw;
+	}
+}
+.fadeOutLtoR {
+	animation: fadeOutLtoR 1s forwards;
+}
+.fadeOutRtoL {
+	animation: fadeOutRtoL 1s forwards;
+}

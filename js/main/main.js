@@ -114,3 +114,36 @@ document.addEventListener(
 	},
 	false
 );
+
+// Topカバーアニメーション
+const $covers = $('.top-cover');
+let flagLR = true; //trueならLtoR
+function AddClass(target) {
+	if (flagLR) {
+		target.addClass('fadeOutLtoR');
+		flagLR = false;
+	} else {
+		target.addClass('fadeOutRtoL');
+		flagLR = true;
+	}
+	setTimeout(CoverHide, 3000, target);
+}
+function CoverHide(target) {
+	target.addClass('is-hide');
+}
+
+// Promiseの処理をループで繰り返す
+let promise = Promise.resolve();
+for (let i = 0, len = $covers.length; i < len; i++) {
+	promise = promise.then(MoveCover.bind(this, i)); // bindでMoveCoverに引数iを渡す
+}
+
+// ループで実行する処理
+function MoveCover(nth) {
+	// 引数iを受け取る
+	return new Promise((resolve, reject) => {
+		setTimeout(() => {
+			resolve(AddClass($covers.eq(nth)));
+		}, 500);
+	});
+}
