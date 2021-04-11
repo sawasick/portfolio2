@@ -601,13 +601,13 @@ body {
 }
 
 .fadeOutLtoR {
-  -webkit-animation: fadeOutLtoR 1s forwards;
-          animation: fadeOutLtoR 1s forwards;
+  -webkit-animation: fadeOutLtoR 0.8s forwards;
+          animation: fadeOutLtoR 0.8s forwards;
 }
 
 .fadeOutRtoL {
-  -webkit-animation: fadeOutRtoL 1s forwards;
-          animation: fadeOutRtoL 1s forwards;
+  -webkit-animation: fadeOutRtoL 0.8s forwards;
+          animation: fadeOutRtoL 0.8s forwards;
 }
 
 .fv-wrapper, .work-desc-wrapper {

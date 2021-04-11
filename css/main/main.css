@@ -683,11 +683,25 @@ SP
 }
 
 .profile-text-wrapper a {
-  width: 100%;
+  width: 30%;
+  position: relative;
 }
 
 .profile-text-wrapper a img {
-  width: 30%;
+  width: 100%;
+}
+
+.profile-text-wrapper a img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.profile-text-wrapper a img:last-child:hover {
+  opacity: 1;
 }
 
 .skills-wrapper {
@@ -938,12 +952,12 @@ SP
 }
 
 .fadeOutLtoR {
-  -webkit-animation: fadeOutLtoR 1s forwards;
-          animation: fadeOutLtoR 1s forwards;
+  -webkit-animation: fadeOutLtoR 0.8s forwards;
+          animation: fadeOutLtoR 0.8s forwards;
 }
 
 .fadeOutRtoL {
-  -webkit-animation: fadeOutRtoL 1s forwards;
-          animation: fadeOutRtoL 1s forwards;
+  -webkit-animation: fadeOutRtoL 0.8s forwards;
+          animation: fadeOutRtoL 0.8s forwards;
 }
 /*# sourceMappingURL=main.css.map */
