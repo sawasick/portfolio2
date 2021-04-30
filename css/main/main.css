@@ -590,6 +590,34 @@ SP
   margin-right: 2vw;
 }
 
+/* styleGuide
+PC
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
+.txt-small : 16px
+*/
+/*
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
+.txt-small : 11px
+*/
+/* メディアクエリ  */
 /* Top */
 .top-wrapper {
   position: relative;
@@ -626,6 +654,34 @@ SP
   position: relative;
 }
 
+/* styleGuide
+PC
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
+.txt-small : 16px
+*/
+/*
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
+.txt-small : 11px
+*/
+/* メディアクエリ  */
 /* About */
 .vision-wrapper p:first-child {
   position: relative;
@@ -797,6 +853,34 @@ SP
   }
 }
 
+/* styleGuide
+PC
+100vw = 1920px を基にサイズを決定
+
+.txt-xxlarge : 70px
+.txt-xlarge : 50px
+.txt-large : 44px
+.txt-xxxmedium : 30px
+.txt-xxmedium : 28px
+.txt-xmedium : 24px
+.txt-medium : 22px 基準サイズ
+.txt-xsmall : 22px固定
+.txt-small : 16px
+*/
+/*
+SP
+100vw = 375px を基にサイズを決定
+.txt-xxlarge : 22px
+.txt-xlarge : 20px
+.txt-large : 19px
+.txt-xxxmedium : 18px
+.txt-xxmedium : 16px
+.txt-xmedium : 14px
+.txt-medium : 12px 基準サイズ
+.txt-xsmall : 12px 固定
+.txt-small : 11px
+*/
+/* メディアクエリ  */
 /* Works */
 .cat-wrapper {
   display: -webkit-box;

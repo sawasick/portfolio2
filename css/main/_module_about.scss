@@ -1,0 +1,129 @@
+// Module
+
+@import 'variables';
+
+/* About */
+// vision
+.vision-wrapper {
+	p:first-child {
+		position: relative;
+	}
+	span {
+		background: linear-gradient($baseColor 70%, $accentColor 0);
+	}
+}
+
+// profile
+.profile-wrapper {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	img {
+		width: $img-profile-width;
+		@include sp {
+			width: 100%;
+			height: 100%;
+		}
+		@include tab {
+			width: 45%;
+		}
+	}
+}
+.profile-text-wrapper {
+	width: 480px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	@include tab {
+		width: 45%;
+	}
+	a {
+		width: 30%;
+		position: relative;
+		img {
+			width: 100%;
+
+			&:last-child {
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: all 0.3s ease;
+
+				&:hover {
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+
+// skills
+.skills-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 80%;
+	margin: 0 auto;
+
+	li {
+		width: 100%;
+		margin: 1% 0;
+
+		ul {
+			display: flex;
+			justify-content: space-between;
+
+			li {
+				position: relative;
+				width: $img-skill-width;
+				height: $img-skill-width + 30px;
+
+				@include sp {
+					width: 17%;
+					height: auto;
+				}
+				@include tab {
+					width: 17%;
+					height: auto;
+				}
+
+				img {
+					width: 100%;
+					height: 80%;
+					&:last-child {
+						position: absolute;
+						top: 0;
+						left: 0;
+					}
+				}
+				span {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 80%;
+					background-color: $baseColor;
+				}
+			}
+		}
+	}
+}
+.skill-frame {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.skill-caption {
+	text-align: center;
+	transition: all 0.3s ease;
+	height: auto !important;
+	top: 80% !important;
+
+	@include sp {
+		display: none;
+	}
+	@include tab {
+		display: none;
+	}
+}

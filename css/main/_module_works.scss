@@ -1,0 +1,67 @@
+// Module
+
+@import 'variables';
+
+/* Works */
+.cat-wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 25%;
+
+	@include sp {
+		display: none;
+	}
+}
+.works-wrapper {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	li {
+		width: 32%;
+		margin-bottom: 2%;
+		@include sp {
+			width: 100%;
+		}
+	}
+}
+.work-wrapper {
+	position: relative;
+
+	&:hover .work-mask {
+		opacity: 1;
+	}
+	img {
+		width: 100%;
+	}
+	a {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: 10;
+	}
+}
+.work-mask {
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	width: 100%;
+	height: 96%;
+	top: 0;
+	left: 0;
+	transition: all 0.5s ease;
+	opacity: 0;
+
+	@include sp {
+		display: none;
+	}
+	@include tab {
+		display: none;
+	}
+
+	figcaption {
+		color: $baseColor;
+		padding-left: 1vw;
+	}
+}
